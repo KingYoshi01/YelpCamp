@@ -1,0 +1,41 @@
+<% layout('layouts/boilerplate') %> 
+<div class="container d-flex justify-content-center align-items-center mt-0">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+      <div class="card shadow">
+        <img src="https://images.unsplash.com/photo-1517825362571-483743f4580d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxyYW5kb218fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit" 
+          alt="" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Sign Up</h5>
+          <form action="/register" method="POST" class="validated-form" novalidate>
+            <div class="mb-3">
+              <label for="username" class="form-label">Username:</label>
+              <input type="text" name="username" id="username" class="form-control" required>
+              <div class="valid-feedback">
+                Looks Good!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" name="email" id="email" class="form-control" required>
+              <div class="valid-feedback">
+                Looks Good!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" name="password" id="password" class="form-control" required>
+              <div class="valid-feedback">
+                Looks Good!
+              </div>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-success btn-block">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
