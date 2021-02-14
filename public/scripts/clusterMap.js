@@ -38,7 +38,7 @@ map.on('load', function () {
         ['get', 'point_count'],
         '#33ffce',
         10,
-        'red',
+        '#33ffce',
         30,
         '#33ffce'
       ],
